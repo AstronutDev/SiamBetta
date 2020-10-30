@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryCell" id="gTV-IL-0wX" customClass="CategoryCell" customModule="Siam_Betta" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="udT-NT-cAY">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="161.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="fish name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ZRM-gk-iiJ">
+                        <rect key="frame" x="8" y="169.5" width="134" height="22.5"/>
+                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZRM-gk-iiJ" firstAttribute="top" secondItem="udT-NT-cAY" secondAttribute="bottom" constant="8" id="9np-Vi-pah"/>
+                <constraint firstAttribute="trailing" secondItem="ZRM-gk-iiJ" secondAttribute="trailing" constant="8" id="F8Z-xj-1Wo"/>
+                <constraint firstItem="udT-NT-cAY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ILu-fw-dv0"/>
+                <constraint firstItem="ZRM-gk-iiJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="K61-Tf-eaR"/>
+                <constraint firstAttribute="trailing" secondItem="udT-NT-cAY" secondAttribute="trailing" id="Ow3-cy-t0t"/>
+                <constraint firstItem="udT-NT-cAY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dqg-0n-pPR"/>
+                <constraint firstAttribute="bottom" secondItem="ZRM-gk-iiJ" secondAttribute="bottom" constant="8" id="jMR-4h-hZ9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="174" height="275"/>
+            <connections>
+                <outlet property="fishImage" destination="udT-NT-cAY" id="2yt-si-VFI"/>
+                <outlet property="fishNameLabel" destination="ZRM-gk-iiJ" id="oj7-Xm-PiY"/>
+            </connections>
+            <point key="canvasLocation" x="227.536231884058" y="131.25"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder" width="600" height="300"/>
+    </resources>
+</document>
